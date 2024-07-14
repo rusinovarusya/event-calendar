@@ -8,14 +8,15 @@ interface InputProps {
   type?: 'date' | 'email' | 'password' | 'text' | 'time';
   label: string;
   name: string;
-  placeholder: string;
+  placeholder?: string;
   error?: FieldError | undefined;
+  className?: string;
 
   noticeText?: string;
   children?: ReactNode;
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps>(({ type='text', label, name, placeholder, error, children, ...props }, ref) => {
+const Input = forwardRef<HTMLInputElement, InputProps>(({ type='text', label, name, placeholder='', error, children, ...props }, ref) => {
   const id = name;
   const [isInputHasBeenFocused, setInputHasBeenFocused] = useState(false);
   

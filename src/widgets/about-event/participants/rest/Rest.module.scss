@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+
+  .images {
+    position: relative;
+    width: 73px;
+    height: 42px;
+
+    .img {
+      position: absolute;
+      top: 0;
+
+      width: 40px;
+      height: 40px;
+      border: 1px solid $white_color;
+      border-radius: 50%;
+
+      &:nth-child(1) {
+        left: 0;
+      }
+
+      &:nth-child(2) {
+        left: 16px;
+      }
+
+      &:nth-child(3) {
+        left: 32px;
+      }
+    }
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+  }
+}

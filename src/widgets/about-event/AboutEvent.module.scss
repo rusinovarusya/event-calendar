@@ -1,0 +1,15 @@
+.container {
+  padding: 80px 64px;
+
+  .enter {
+    text-align: center;
+
+    .emphasized {
+      font: inherit;
+      color: $accent_color;
+      background-color: transparent;
+    }
+  }
+}
+
+

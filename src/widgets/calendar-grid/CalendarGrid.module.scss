@@ -1,0 +1,49 @@
+.table {
+  border-collapse: collapse;
+}
+
+.th {
+  padding-bottom: 16px;
+}
+
+.tbody {
+  border: 1px solid $middle_color;
+  border-radius: 24px;
+}
+
+.title {
+  padding-bottom: 16px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.row:first-child {
+  border-radius: 24px 24px 0 0;
+}
+
+.row:last-child {
+  border-radius: 0 0 24px 24px;
+}
+
+.cell {
+  width: 258px;
+  height: 104px;
+  padding: 12px;
+  border: 1px solid $middle_color;
+  text-align: right;
+  vertical-align: top;
+}
+
+.passive {
+  color: $middle_color;
+}
+
+.active {
+  color: $dark_color;
+}
+
+.eventContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}

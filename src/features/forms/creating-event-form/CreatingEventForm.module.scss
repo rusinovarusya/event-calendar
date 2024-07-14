@@ -1,0 +1,49 @@
+.content {
+  display: grid;
+  grid-template-areas: 'name period' 'description time' 'description place' 'participants organizer' 'inputImage selectedImages';
+  gap: 22px 32px;
+
+  .name {
+    grid-area: name;
+  }
+
+  .description {
+    grid-area: description;
+  }
+
+  .participants {
+    grid-area: participants;
+  }
+
+  .inputImage {
+    grid-area: inputImage;
+  }
+
+  .period {
+    grid-area: period;
+    display: flex;
+    gap: 8px;
+  }
+
+  .timeAndPlace {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .time {
+      grid-area: time;
+    }
+  
+    .place {
+      grid-area: place;
+    }
+  }
+
+  .organizer {
+    grid-area: organizer;
+    }
+
+  .selectedImages {
+    grid-area: selectedImages;
+  }
+}

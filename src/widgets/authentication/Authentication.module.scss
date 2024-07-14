@@ -1,0 +1,12 @@
+.container {
+  padding: 133px 127px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .title {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
+}

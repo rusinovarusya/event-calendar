@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  width: 133px;
+  height: 80px;
+  border-radius: 12px;
+
+  &.hover {
+    filter: rgba(0, 0, 0, 0.2);
+
+    .button {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      fill: $white_color;
+    }
+  }
+
+  &.dragging {
+    filter: rgba(255, 255, 255, 0.2);
+  }
+
+
+}

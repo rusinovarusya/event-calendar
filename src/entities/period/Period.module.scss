@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-areas: 'start end' 'calendar';
+  gap: 8px;
+}
+
+.start {
+  grid-area: start;
+}
+
+.end {
+  grid-area: end;
+}
+
+.calendar {
+  grid-area: calendar;
+}

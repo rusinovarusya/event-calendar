@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 56px;
+
+  .title {
+    text-align: left;
+  }
+
+  .content {
+    display: flex;
+    gap: 48px;
+  }
+}

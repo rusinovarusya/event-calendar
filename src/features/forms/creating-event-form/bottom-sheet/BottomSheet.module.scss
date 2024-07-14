@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 16px 36px;
+
+  &:nth-child(n) {
+    width: 312px;
+  }
+
+  .calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        text-align: center;
+      }
+    }
+
+    .monthGrid {
+      display: grid;
+      grid-template-columns: repeat(7, 24px);
+      grid-template-rows: repeat(auto, 24px);
+      gap: 12px 24px;
+
+      .day {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $middle_color;
+      }
+
+      .date {    
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 4px;
+        
+        &.passive {
+          color: $middle_color;
+        }
+
+        &.active {
+          color: $dark_color;
+        }
+
+        &.selected {
+          color: $white_color;
+          background-color: $accent_color;
+        }
+      }
+    } 
+  }
+}
+
+
+

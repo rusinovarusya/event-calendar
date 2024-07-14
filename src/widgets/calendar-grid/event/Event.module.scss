@@ -1,0 +1,10 @@
+.container {
+  padding: 2px 6px;
+  text-align: right;
+  background-color: $light_color;
+  border-radius: 8px;
+}
+
+.passive { color: $middle_color; }
+
+.active { color: $dark_color; }
