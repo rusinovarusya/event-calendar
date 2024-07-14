@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  padding: 88px 80px 64px;
+
+  .title {
+    width: 516px;
+  }
+
+  .img {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .pigeon {
+    top: 143px;
+    left: 496px;
+    width: 398px;
+    height: 327px;
+  }
+
+  .unicorn {
+    top: -81px;
+    left: 419px;
+    width: 418px;
+    height: 640px;
+  }
+
+  .hand {
+    top: 0;
+    left: 520px;
+    width: 215px;
+    height: 510px;
+  }
+}

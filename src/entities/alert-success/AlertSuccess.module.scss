@@ -1,0 +1,36 @@
+.content {
+  margin-top: 16px;
+  margin-bottom: 40px;
+
+  .eventTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 71px;
+
+    .emphasized {
+      color: $accent_color;
+    }
+  }
+
+  .eventDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .datetime {
+      display: flex;
+      gap: 16px;
+
+      .delimiter {
+        width: 1px;
+        height: 1em;
+        background-color: $middle_color;
+      }
+    }
+
+    .address {
+      text-align: left;
+    }
+  }
+}

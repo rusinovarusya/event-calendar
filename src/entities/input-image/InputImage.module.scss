@@ -1,0 +1,26 @@
+.label {
+  position: relative;
+  width: 580px;
+  height: 156px;
+  border: 1px dashed $middle_color;
+  border-radius: 12px;
+
+  &:hover, &.dragging {
+    border-color: $dark_color;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .description {
+    position: absolute;
+    top: 67px;
+    left: 143px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: $middle_color;
+  }
+}

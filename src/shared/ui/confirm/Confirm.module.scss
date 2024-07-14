@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-areas: 'title title' 'buttonNo buttonYes';
+  justify-content: center;
+  gap: 64px 24px;
+  width: 582px;
+  padding: 80px 64px 64px;
+
+  .title {
+    grid-area: title;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
