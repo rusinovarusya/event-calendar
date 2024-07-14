@@ -11,7 +11,7 @@ interface AlertSuccessProps {
 }
 
 const AlertSuccess = ({ eventId, title, description, img, onClick }: AlertSuccessProps) => {
-  const { eventName, day, date, time, address } = { eventName: 'Event name', day: 'Day', date: 'Date', time: 'Time', address: 'Address' };
+  const { eventName, day, date, time, address } = { eventName: 'Event name' + eventId, day: 'Day', date: 'Date', time: 'Time', address: 'Address' };
 
   return (
     <Alert title={title} buttonTitle='Отлично' img={img} onClick={onClick}>

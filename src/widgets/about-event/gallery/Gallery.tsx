@@ -7,7 +7,7 @@ interface GalleryProps {
 }
 
 const Gallery = ({ eventId }: GalleryProps) => {
-  const imageList = ['img1', 'img2', 'img3', 'img4', 'img5', 'img6', 'img7', 'img8'];
+  const imageList = ['img1', 'img2', 'img3', 'img4', 'img5', 'img6', 'img7', 'img8'].map((name: string) => name + eventId);
 
   const prev = () => {}
 

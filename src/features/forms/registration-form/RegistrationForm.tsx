@@ -9,7 +9,7 @@ interface RegistrationFormProps {
 }
 
 const RegistrationForm = ({ onSubmit }: RegistrationFormProps) => {
-  const { register, handleSubmit, setError, getValues, formState } = useForm({
+  const { register, handleSubmit, setError, formState } = useForm({
     defaultValues: {
       firstName: '',
       password: '',

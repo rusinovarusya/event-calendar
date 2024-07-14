@@ -9,11 +9,11 @@ interface ParticipantsProps {
 
 const Participants = ({ eventId }: ParticipantsProps) => {
   const participants = [
-    { participantId: 'p0', name: 'Name 1', isOrganizer: true }, 
-    { participantId: 'p1', name: 'Name 1', isOrganizer: false }, 
-    { participantId: 'p2', name: 'Name 1', isOrganizer: false }, 
-    { participantId: 'p3', name: 'Name 1', isOrganizer: false }, 
-    { participantId: 'p4', name: 'Name 1', isOrganizer: true }
+    { participantId: `p0-${eventId}`, name: 'Name 1', isOrganizer: true }, 
+    { participantId: `p1-${eventId}`, name: 'Name 1', isOrganizer: false }, 
+    { participantId: `p2-${eventId}`, name: 'Name 1', isOrganizer: false }, 
+    { participantId: `p3-${eventId}`, name: 'Name 1', isOrganizer: false }, 
+    { participantId: `p4-${eventId}`, name: 'Name 1', isOrganizer: true }
   ];
 
   return (

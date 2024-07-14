@@ -16,11 +16,11 @@ interface InputProps {
   children?: ReactNode;
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps>(({ type='text', label, name, placeholder='', error, children, ...props }, ref) => {
+const Input = forwardRef<HTMLInputElement, InputProps>(({ type='text', label, name, placeholder='', error, children }, ref) => {
   const id = name;
   const [isInputHasBeenFocused, setInputHasBeenFocused] = useState(false);
   
-  const handleFocus = (e: React.FocusEvent<HTMLInputElement, Element>) => {
+  const handleFocus = () => {
     setInputHasBeenFocused(true);
   }
 
@@ -28,6 +28,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({ type='text', label, na
     const value = e.target.value;
     setInputHasBeenFocused(Boolean(value));
   }
+
+  console.log(ref)
 
   return (
     <div className={classNames(styles.container, { [styles['inputError']]: error?.message })}>

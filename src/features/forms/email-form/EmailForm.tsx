@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import { isValidEmail } from '../../helpers/isValidEmail';
-import { useGetUserDataByEmailQuery } from '../../../shared/api/plannerApi';
 import Button from '../../../shared/ui/button/Button';
 import Input from '../../../entities/input/Input';
 import { passwordFormatErrorMessage } from '../../helpers/isValidPassword';
@@ -13,7 +12,7 @@ interface EmailFormProps {
 }
 
 const EmailForm = ({ onSubmit }: EmailFormProps) => {
-  const { register, handleSubmit, setError, getValues, formState } = useForm({
+  const { register, handleSubmit, setError, formState } = useForm({
     defaultValues: {
       email: '',
     },
@@ -21,7 +20,6 @@ const EmailForm = ({ onSubmit }: EmailFormProps) => {
   });
 
   const submit = () => {
-    const userData = useGetUserDataByEmailQuery(email);
     onSubmit();
   }
 

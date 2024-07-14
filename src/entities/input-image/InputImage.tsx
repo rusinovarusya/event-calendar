@@ -7,7 +7,7 @@ interface InputImageProps {
 }
 
 const InputImage = ({ className }: InputImageProps) => {
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {}
+  const handleFileChange = () => {}
 
   return (   
     <label htmlFor='' className={classNames(styles.label, className && styles[className])}>

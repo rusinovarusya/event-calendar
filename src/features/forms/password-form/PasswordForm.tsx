@@ -9,7 +9,7 @@ interface PasswordFormProps {
 }
 
 const PasswordForm = ({ onSubmit }: PasswordFormProps) => {
-  const { register, handleSubmit, setError, getValues, formState } = useForm({
+  const { register, handleSubmit, setError, formState } = useForm({
     defaultValues: {
       password: '',
     },

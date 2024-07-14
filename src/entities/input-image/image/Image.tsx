@@ -1,8 +1,6 @@
 import Icon from '../../../shared/ui/icon/Icon';
 import styles from './Image.module.scss';
 
-interface ImageProps {}
-
 const Image = () => {
   return (
     <div className={styles.container}>

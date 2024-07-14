@@ -8,7 +8,7 @@ interface DescriptionProps {
 }
 
 const Description = ({ eventId }: DescriptionProps) => {
-  const name = 'Event name';
+  const name = 'Event name ' + eventId;
   const day = 'day';
   const date = 'date';
   const time = 'time';
